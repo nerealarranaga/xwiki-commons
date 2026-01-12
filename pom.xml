@@ -44,6 +44,9 @@
   <url>https://extensions.xwiki.org?id=${project.groupId}:${project.artifactId}:${project.version}:::</url>
   <inceptionYear>2004</inceptionYear>
   <properties>
+
+  <sonar.organization>nerealarranaga-1</sonar.organization>
+
     <!-- Define it here because we can't use ${project.version} for plugins and it's useful for
          commons children anyway -->
     <commons.version>18.0.0-SNAPSHOT</commons.version>
