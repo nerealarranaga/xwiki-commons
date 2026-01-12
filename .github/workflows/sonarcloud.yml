@@ -42,4 +42,6 @@ jobs:
             -Dxwiki.enforcer.skip=true \
             verify \
             org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.projectKey=nerealarranaga-1_xwiki
+             -Dsonar.projectKey=nerealarranaga-1_xwiki \
+             -Dsonar.organization=nerealarranaga-1 \
+             -Dsonar.host.url=https://sonarcloud.io
