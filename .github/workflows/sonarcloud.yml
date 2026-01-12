@@ -35,7 +35,10 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mvn -B -DskipTests \
+          mvn -B \
+            -DskipTests \
+            -DskipITs \
+            -Dmaven.archetype.skip=true \
             -Dxwiki.enforcer.skip=true \
             verify \
             org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
