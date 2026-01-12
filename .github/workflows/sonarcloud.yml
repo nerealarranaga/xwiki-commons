@@ -38,7 +38,7 @@ jobs:
           mvn -B \
             -DskipTests \
             -DskipITs \
-            -Dmaven.archetype.skip=true \
+            -Darchetype.test.skip=true \
             -Dxwiki.enforcer.skip=true \
             verify \
             org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
